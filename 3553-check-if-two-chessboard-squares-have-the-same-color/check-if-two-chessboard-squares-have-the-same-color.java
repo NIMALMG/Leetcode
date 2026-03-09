@@ -6,8 +6,6 @@ class Solution {
         int m2 = c2.charAt(1) - '0';
         int sum1 = n1+n2;
         int sum2 = m1+m2;
-        System.out.println(sum1);
-        System.out.println(sum2);
         if(sum1 % 2 == 0 && sum2 %2 == 0){
             return true;
         }
