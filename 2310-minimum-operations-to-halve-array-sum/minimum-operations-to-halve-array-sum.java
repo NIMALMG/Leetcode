@@ -9,7 +9,6 @@ class Solution {
         }
 
         sum = sum / 2;
-        int ans = 0;
         while(sum > 0){
             double t = pq.poll();
             t = t/2;
