@@ -12,7 +12,7 @@ class Solution {
             }
         }
 
-        for(int i = 0;i<freq1.length;i++){
+        for(int i = 0;i<26;i++){
             if(freq1[i]>0 && freq2[i]>0){
                 cnt++;
             }
