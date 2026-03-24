@@ -17,8 +17,6 @@ class Solution {
                 cnt++;
             }
         }
-        // System.out.println(Arrays.toString(freq1));
-        // System.out.println(Arrays.toString(freq2));
         return cnt;
     }
 }
