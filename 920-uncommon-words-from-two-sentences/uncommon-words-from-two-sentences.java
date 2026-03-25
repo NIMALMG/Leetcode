@@ -5,9 +5,9 @@ class Solution {
             map.put(s,map.getOrDefault(s,0)+1);
         }
         ArrayList<String> res = new ArrayList<>();
-        for(String st:map.keySet()){
-            if(map.get(st) == 1){
-                res.add(st);
+        for(Map.Entry<String, Integer> entry : map.entrySet()){
+            if(entry.getValue() == 1){
+                res.add(entry.getKey());
             }
         }
         String[] ans = res.toArray(new String[0]);
