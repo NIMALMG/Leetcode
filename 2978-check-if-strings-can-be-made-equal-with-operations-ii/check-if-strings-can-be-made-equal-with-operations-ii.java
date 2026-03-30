@@ -21,8 +21,6 @@ class Solution {
         for(int i=1;i<s2.length();i+=2){
             freq2[s2.charAt(i)-'a']++;
         }
-    //    System.out.println(Arrays.toString(freq1));
-    //    System.out.print(Arrays.toString(freq2));
         for(int i =0;i<26;i++){
             if(freq1[i]!=freq2[i]) return false;
         }
