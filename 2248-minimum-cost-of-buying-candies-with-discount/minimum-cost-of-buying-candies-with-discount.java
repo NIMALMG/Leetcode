@@ -17,7 +17,6 @@ class Solution {
             if(cnt%2 == 0){
                 i-=1;
             }
-            System.out.println(sum);
         }
         return sum;
     }
