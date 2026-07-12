@@ -1,0 +1,22 @@
+class Solution {
+    public int[] arrayRankTransform(int[] arr) {
+        int[] Narr = Arrays.copyOf(arr,arr.length);
+        Map<Integer,Integer> N = new HashMap<>();
+        TreeSet<Integer> set = new TreeSet<>();
+        Arrays.sort(Narr);
+        for(int nums:arr){
+            set.add(nums);
+        }
+        int j =1;
+        for(int num : set){
+            N.put(num,j++);
+        }
+        int[] arrr = new int[arr.length];
+        for(int k =0;k<arr.length;k++){
+            arrr[k] = N.get(arr[k]);
+        }
+        return arrr;
+
+
+    }
+}
